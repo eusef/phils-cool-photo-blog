@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkphils_cool_photo_blog=self.webpackChunkphils_cool_photo_blog||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/phils-cool-photo-blog/blog","blogTitle":"Blog","authorsListPath":"/phils-cool-photo-blog/blog/authors"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkphils_cool_photo_blog=self.webpackChunkphils_cool_photo_blog||[]).push([[7289],{5695:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/phils-cool-photo-blog/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

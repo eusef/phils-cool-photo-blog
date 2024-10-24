@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkphils_cool_photo_blog=self.webpackChunkphils_cool_photo_blog||[]).push([[1235],{8552:o=>{o.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
