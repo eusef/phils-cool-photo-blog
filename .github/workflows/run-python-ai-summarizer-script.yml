@@ -24,4 +24,4 @@ jobs:
           OPEN_AI_PROJECT: op://ci-cd/OpenAI CI-CD Credential/username
           OPEN_AI_KEY: op://ci-cd/OpenAI CI-CD Credential/credential
       - name: Print masked secret
-        run: 'echo "Secret: ${{ steps.op-ai-creds.outputs.SECRET }}"'
+        run: 'echo "OPEN_AI_PROJECT: ${{ steps.op-ai-creds.outputs.OPEN_AI_PROJECT }} \nOPEN_AI_KEY:${{ steps.op-ai-creds.outputs.OPEN_AI_KEY }}"'
