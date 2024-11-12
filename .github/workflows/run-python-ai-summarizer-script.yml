@@ -16,7 +16,7 @@ jobs:
           python-version: '3.x' # Replace with your required Python version
       - name: Load Docker secrets from 1Password 
         id: op-ai-creds
-        uses: 1password/load-secrets-action@v1 
+        uses: 1password/load-secrets-action@v2
         with:
           export-env: false 
         env:
