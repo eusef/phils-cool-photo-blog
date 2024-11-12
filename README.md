@@ -6,3 +6,5 @@ This demo runs locally to help people test a Github action that includes the 1Pa
 
 For more information about the 1Password GitHub Action
 - https://developer.1password.com/docs/ci-cd/github-actions/
+
+This is a test
