@@ -7,18 +7,18 @@ jobs:
     steps:
       # Check out the repository code
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
 
       # Set up Python environment
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@main
         with:
-          python-version: '3.x' # Replace with your required Python version
-      - name: Load OpenAI Tokens from 1Password 
+          python-version: "3.x" # Replace with your required Python version
+      - name: Load OpenAI Tokens from 1Password
         id: op-ai-creds
         uses: 1password/load-secrets-action@v2
         with:
-          export-env: false 
+          export-env: false
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
           OPEN_AI_PROJECT: op://ci-cd/OpenAI CI-CD Credential/username
