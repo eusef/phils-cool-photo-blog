@@ -18,7 +18,7 @@ async def generate_dad_joke(commit_message):
     try:
         client = AsyncOpenAI(api_key=os.environ['OPENAI_API_KEY'])
         completion = await client.chat.completions.create(model="gpt-4-turbo", messages=[{"role": "user", "content": prompt}])
-        joke = completion.choices[0].text.strip()
+        joke = completion.choices[0].message['content'].strip()
         return joke
     except Exception as e:
         print(f"Error generating joke: {e}")
