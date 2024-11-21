@@ -30,7 +30,7 @@ def generate_dad_joke(commit_message):
     prompt = f"Create a dad joke inspired by the following commit message: \"{commit_message}\""
     try:
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="gpt-4-turbo",
             prompt=prompt,
             max_tokens=50
         )
