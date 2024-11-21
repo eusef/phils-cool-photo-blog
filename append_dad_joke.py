@@ -1,5 +1,5 @@
 import os
-import openai
+from openai import AsyncOpenAI
 import re
 import sys
 import subprocess
@@ -26,15 +26,12 @@ if not commit_message:
     sys.exit(0)
 
 # Generate a dad joke using OpenAI's API based on the commit message
-def generate_dad_joke(commit_message):
+async def generate_dad_joke(commit_message):
     prompt = f"Create a dad joke inspired by the following commit message: \"{commit_message}\""
     try:
-        response = openai.Completion.create(
-            engine="gpt-4-turbo",
-            prompt=prompt,
-            max_tokens=50
-        )
-        joke = response.choices[0].text.strip()
+        client = AsyncOpenAI()
+        completion = await client.chat.completions.create(model="gpt-4-turbo", messages=[{"role": "user", "content": prompt}])
+        joke = completion.choices[0].text.strip()
         return joke
     except Exception as e:
         print(f"Error generating joke: {e}")
