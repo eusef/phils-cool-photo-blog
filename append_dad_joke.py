@@ -3,7 +3,6 @@ from openai import AsyncOpenAI
 import re
 import sys
 import subprocess
-import aiohttp
 
 # Read the last non-dad-joke commit message
 def get_last_non_dad_joke_commit():
