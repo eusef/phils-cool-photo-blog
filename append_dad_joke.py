@@ -4,15 +4,6 @@ import re
 import sys
 import subprocess
 
-# Set up OpenAI API key
-client = OpenAI(
-  api_key=os.environ['OPENAI_API_KEY'],  # this is also the default, it can be omitted
-)
-
-if not client.api_key:
-    print("Error: OPENAI_API_KEY environment variable not set.")
-    sys.exit(1)
-
 # Read the last non-dad-joke commit message
 def get_last_non_dad_joke_commit():
     log_output = os.popen('git log --pretty=%B').read().strip().split('\n')
@@ -31,7 +22,7 @@ if not commit_message:
 async def generate_dad_joke(commit_message):
     prompt = f"Create a dad joke inspired by the following commit message: \"{commit_message}\""
     try:
-        client = AsyncOpenAI()
+        client = AsyncOpenAI(api_key=os.environ['OPENAI_API_KEY'])
         completion = await client.chat.completions.create(model="gpt-4-turbo", messages=[{"role": "user", "content": prompt}])
         joke = completion.choices[0].text.strip()
         return joke
