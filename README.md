@@ -7,8 +7,7 @@ This demo runs locally to help people test a Github action that includes the 1Pa
 For more information about the 1Password GitHub Action
 - https://developer.1password.com/docs/ci-cd/github-actions/
 
-This is a test
-
+// Below this spot are all the Dad Jokes based on a summary of the last commit!
 
 ## Dad Joke of the Day
 Why did the programmer take a guitar to his coding job after adding GitHub token access?
