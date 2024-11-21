@@ -23,6 +23,10 @@ jobs:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
           OPEN_AI_PROJECT: op://ci-cd/OpenAI CI-CD Credential/username
           OPEN_AI_KEY: op://ci-cd/OpenAI CI-CD Credential/credential
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai
       - name: Print masked secret
         run: 'echo "OPEN_AI_PROJECT: ${{ steps.op-ai-creds.outputs.OPEN_AI_PROJECT }} \nOPEN_AI_KEY:${{ steps.op-ai-creds.outputs.OPEN_AI_KEY }}"'
       - name: Run Append Dad Joke Script
