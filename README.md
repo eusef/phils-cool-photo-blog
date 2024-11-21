@@ -13,3 +13,9 @@ For more information about the 1Password GitHub Action
 Why did the programmer take a guitar to his coding job after adding GitHub token access?
 
 Because he wanted to pull some strings and push his commits! 🎸
+
+
+## Dad Joke of the Day
+Why did the developer go broke after cleaning up the README file?
+
+Because they cleared out all the cache!
