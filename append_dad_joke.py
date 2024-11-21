@@ -5,9 +5,11 @@ import sys
 import subprocess
 
 # Set up OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(
+  api_key=os.environ['OPENAI_API_KEY'],  # this is also the default, it can be omitted
+)
 
-if not openai.api_key:
+if not client.api_key:
     print("Error: OPENAI_API_KEY environment variable not set.")
     sys.exit(1)
 
