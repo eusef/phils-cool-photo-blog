@@ -53,7 +53,7 @@ async def main():
             subprocess.run(["git", "config", "--local", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
             subprocess.run(["git", "add", readme_path], check=True)
             subprocess.run(["git", "commit", "-m", "chore: add dad joke to README"], check=True)
-            subprocess.run(["git", "push", "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/eusef/phils-cool-photo-blog.git"], check=True)
+            subprocess.run(["git", "push", f"https://x-access-token:{os.environ['GITHUB_TOKEN']}@github.com/eusef/phils-cool-photo-blog.git"], check=True)
             print("Changes committed and pushed successfully.")
         except subprocess.CalledProcessError as e:
             print(f"Error committing or pushing changes: {e}")
