@@ -3,6 +3,7 @@ from openai import AsyncOpenAI
 import re
 import sys
 import subprocess
+import aiohttp
 
 # Read the last non-dad-joke commit message
 def get_last_non_dad_joke_commit():
@@ -11,12 +12,6 @@ def get_last_non_dad_joke_commit():
         if not re.search(r'chore: add dad joke to README', message, re.IGNORECASE):
             return message.strip()
     return None
-
-commit_message = get_last_non_dad_joke_commit()
-
-if not commit_message:
-    print("No suitable commit message found. Skipping.")
-    sys.exit(0)
 
 # Generate a dad joke using OpenAI's API based on the commit message
 async def generate_dad_joke(commit_message):
@@ -30,32 +25,43 @@ async def generate_dad_joke(commit_message):
         print(f"Error generating joke: {e}")
         sys.exit(1)
 
-joke = generate_dad_joke(commit_message)
+async def main():
+    commit_message = get_last_non_dad_joke_commit()
 
-# Append the joke to the README file
-readme_path = 'README.md'
-try:
-    with open(readme_path, 'a') as readme_file:
-        readme_file.write(f"\n\n## Dad Joke of the Day\n{joke}\n")
-    print("Dad joke appended to README.")
-except FileNotFoundError:
-    print(f"Error: {readme_path} not found.")
-    sys.exit(1)
-except Exception as e:
-    print(f"Error appending to README: {e}")
-    sys.exit(1)
+    if not commit_message:
+        print("No suitable commit message found. Skipping.")
+        sys.exit(0)
 
-# Commit and push changes
-def commit_and_push_changes():
+    joke = await generate_dad_joke(commit_message)
+
+    # Append the joke to the README file
+    readme_path = 'README.md'
     try:
-        subprocess.run(["git", "config", "--local", "user.name", "github-actions[bot]"], check=True)
-        subprocess.run(["git", "config", "--local", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
-        subprocess.run(["git", "add", readme_path], check=True)
-        subprocess.run(["git", "commit", "-m", "chore: add dad joke to README"], check=True)
-        subprocess.run(["git", "push"], check=True)
-        print("Changes committed and pushed successfully.")
-    except subprocess.CalledProcessError as e:
-        print(f"Error committing or pushing changes: {e}")
+        with open(readme_path, 'a') as readme_file:
+            readme_file.write(f"\n\n## Dad Joke of the Day\n{joke}\n")
+        print("Dad joke appended to README.")
+    except FileNotFoundError:
+        print(f"Error: {readme_path} not found.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error appending to README: {e}")
         sys.exit(1)
 
-commit_and_push_changes()
+    # Commit and push changes
+    def commit_and_push_changes():
+        try:
+            subprocess.run(["git", "config", "--local", "user.name", "github-actions[bot]"], check=True)
+            subprocess.run(["git", "config", "--local", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
+            subprocess.run(["git", "add", readme_path], check=True)
+            subprocess.run(["git", "commit", "-m", "chore: add dad joke to README"], check=True)
+            subprocess.run(["git", "push", "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/eusef/phils-cool-photo-blog.git"], check=True)
+            print("Changes committed and pushed successfully.")
+        except subprocess.CalledProcessError as e:
+            print(f"Error committing or pushing changes: {e}")
+            sys.exit(1)
+
+    commit_and_push_changes()
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
