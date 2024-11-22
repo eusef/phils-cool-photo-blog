@@ -49,3 +49,9 @@ Because he couldn't handle all the conflicts and it ended up costing him a lot o
 Why did the developer go broke after merging branches?
 
 Because he couldn't handle all the commit-ments!
+
+
+## Dad Joke of the Day
+Why don't programmers like to perform in theaters? 
+
+Because they always get stuck trying to debug the director!
