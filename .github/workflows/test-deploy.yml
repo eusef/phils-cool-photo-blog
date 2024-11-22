@@ -15,7 +15,7 @@ jobs:
       WORKING_DIRECTORY: ./phils-cool-photo-blog
     steps:
       - name: List directory contents
-        run: ls -la ${{ env.WORKING_DIRECTORY }}
+        run: ls -la
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
