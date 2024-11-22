@@ -43,3 +43,9 @@ Because he couldn't handle all the conflicts, and his work was never truly his '
 Why did the developer go broke after merging his branches?
 
 Because he couldn't handle all the conflicts and it ended up costing him a lot of cache!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging branches?
+
+Because he couldn't handle all the commit-ments!
