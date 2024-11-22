@@ -73,3 +73,9 @@ Because he couldn't handle the conflicts and it always ended in a check-out!
 Why did the developer go broke after merging branches?
 
 Because they couldn't handle the git 'conflict' interest rates!
+
+
+## Dad Joke of the Day
+Why did the programmer bring a key to the meeting?
+
+He heard they were trying to generate a lockfile on the fly!
