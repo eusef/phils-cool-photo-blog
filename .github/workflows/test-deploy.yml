@@ -21,6 +21,8 @@ jobs:
         run: ls -la
       - name: List working directory contents
         run: ls -la ${{ env.WORKING_DIRECTORY }}
+      - name: List package-lock.json
+        run: ls -la ${{ env.WORKING_DIRECTORY }}/package-lock.json
       - uses: actions/setup-node@v4
         with:
           node-version: 18
