@@ -132,3 +132,9 @@ Because he couldn't handle so many conflicts, he lost "interest"! 😄
 Why did the developer go broke after trying to deploy their code in production?
 
 Because every time they tried, they ended up with a net loss!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after a project merge?
+
+Because he couldn't handle all the conflicts on his own branch!
