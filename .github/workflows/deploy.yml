@@ -11,6 +11,7 @@ jobs:
   build:
     name: Build Docusaurus
     runs-on: ubuntu-latest
+    WORKING_DIRECTORY: ./phils-cool-photo-blog
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,10 +22,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        working-directory: ./phils-cool-photo-blog
+        working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn install --frozen-lockfile
       - name: Build website
-        working-directory: ./phils-cool-photo-blog
+        working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn build
 
       - name: Upload Build Artifact
