@@ -103,3 +103,9 @@ Because he couldn't handle the conflicts, and now his assets are all over the pl
 Why did the programmer break up with the git repository?
 
 Because every time they tried to connect, there were too many conflicts and they couldn't commit!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging his blog?
+
+Because he couldn't handle all the conflicts and his assets were always in the wrong branch!
