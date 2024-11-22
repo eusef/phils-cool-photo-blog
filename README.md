@@ -55,3 +55,9 @@ Because he couldn't handle all the commit-ments!
 Why don't programmers like to perform in theaters? 
 
 Because they always get stuck trying to debug the director!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging branches for his blog?
+
+Because he couldn’t handle the commit-ment!
