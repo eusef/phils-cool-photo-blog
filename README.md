@@ -37,3 +37,9 @@ Because they needed help adding Docusaurus build files! 🦖💻
 Why did the developer go broke after merging the branches?
 
 Because he couldn't handle all the conflicts, and his work was never truly his 'main' focus!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging his branches?
+
+Because he couldn't handle all the conflicts and it ended up costing him a lot of cache!
