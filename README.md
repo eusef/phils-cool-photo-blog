@@ -19,3 +19,9 @@ Because he wanted to pull some strings and push his commits! 🎸
 Why did the developer go broke after cleaning up the README file?
 
 Because they cleared out all the cache!
+
+
+## Dad Joke of the Day
+Why did the git commit apply for a job in fashion?
+
+Because it wanted to see how well it could handle tags!
