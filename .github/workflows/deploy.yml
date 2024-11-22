@@ -31,7 +31,7 @@ jobs:
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+        # working-directory: ${{ env.WORKING_DIRECTORY }}
         with:
           path: build
 
