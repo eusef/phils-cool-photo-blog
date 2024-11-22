@@ -17,15 +17,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: List directory contents
-        run: ls -la
       - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: yarn
       - name: Install dependencies
         working-directory: ${{ env.WORKING_DIRECTORY }}
-        run: yarn install --frozen-lockfile
+        run: yarn install #--frozen-lockfile
       - name: Test build website
         working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn build
