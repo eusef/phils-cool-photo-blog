@@ -25,3 +25,9 @@ Because they cleared out all the cache!
 Why did the git commit apply for a job in fashion?
 
 Because it wanted to see how well it could handle tags!
+
+## Dad Joke of the Day
+Why did the developer bring a dinosaur to work?
+
+Because they needed help adding Docusaurus build files! 🦖💻
+
