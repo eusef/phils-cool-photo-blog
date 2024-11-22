@@ -166,3 +166,9 @@ Because they couldn't resist committing to too many branches!
 Why did the programmer bring a ladder to work?
 
 Because they needed to upload the build and couldn't find the path!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging their code?
+
+Because they used all their cache hosting Phils's cool photo blog!
