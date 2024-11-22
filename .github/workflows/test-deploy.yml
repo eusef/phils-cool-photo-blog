@@ -12,7 +12,7 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     env:
-      WORKING_DIRECTORY: ./phils-cool-photo-blog
+      WORKING_DIRECTORY: ./phils-cool-photo-blog/
     steps:
       - uses: actions/checkout@v4
         with:
