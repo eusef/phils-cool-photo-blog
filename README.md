@@ -97,3 +97,9 @@ Because they couldn't handle all the commit-ments!
 Why did the developer go broke after merging his blog work?
 
 Because he couldn't handle the conflicts, and now his assets are all over the place!
+
+
+## Dad Joke of the Day
+Why did the git branch get a job at the magazine?
+
+Because it had a lot of "commit"-ment to merging stories!
