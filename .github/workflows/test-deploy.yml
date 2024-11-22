@@ -12,7 +12,7 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     env:
-      WORKING_DIRECTORY: ./phils-cool-photo-blog/
+      WORKING_DIRECTORY: ./phils-cool-photo-blog
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,13 +21,16 @@ jobs:
         run: ls -la
       - name: List working directory contents
         run: ls -la ${{ env.WORKING_DIRECTORY }}
+      - name: List lock files
+        run: ls -la ${{ env.WORKING_DIRECTORY }}/*lock*
       - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: ${{ env.WORKING_DIRECTORY }}/yarn.lock
       - name: Install dependencies
         working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn install --frozen-lockfile
       - name: Test build website
         working-directory: ${{ env.WORKING_DIRECTORY }}
-        run: yarn run build
+        run: yarn build

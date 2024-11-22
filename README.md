@@ -126,3 +126,9 @@ Because it had a lot of "commit"-ment to merging stories!
 Why did the developer go broke after merging his blog work?
 
 Because he couldn't handle so many conflicts, he lost "interest"! 😄
+
+
+## Dad Joke of the Day
+Why did the developer go broke after trying to deploy their code in production?
+
+Because every time they tried, they ended up with a net loss!
