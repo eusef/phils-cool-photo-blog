@@ -61,3 +61,9 @@ Because they always get stuck trying to debug the director!
 Why did the developer go broke after merging branches for his blog?
 
 Because he couldn’t handle the commit-ment!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging his blog-work?
+
+Because he couldn't handle the conflicts and it always ended in a check-out!
