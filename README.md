@@ -135,6 +135,11 @@ Because every time they tried, they ended up with a net loss!
 
 
 ## Dad Joke of the Day
-Why don't branches ever get lonely?
+Why did the developer go broke after a project merge?
 
-Because they're always merging into good company!
+Because he couldn't handle all the conflicts on his own branch!
+
+## Dad Joke of the Day
+Why was the computer tired after merging "main" into "blog-work"?
+
+Because it had too many branches to log!
