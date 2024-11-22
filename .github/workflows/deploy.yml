@@ -21,8 +21,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
+        working-directory: ./phils-cool-photo-blog
         run: yarn install --frozen-lockfile
       - name: Build website
+        working-directory: ./phils-cool-photo-blog
         run: yarn build
 
       - name: Upload Build Artifact

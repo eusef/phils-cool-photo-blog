@@ -18,9 +18,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: npm
+          cache: yarn
 
       - name: Install dependencies
-        run: npm install # --frozen-lockfile
+        working-directory: ./phils-cool-photo-blog
+        run: yarn install --frozen-lockfile
       - name: Test build website
-        run: npm run build
+        working-directory: ./phils-cool-photo-blog
+        run: yarn build
