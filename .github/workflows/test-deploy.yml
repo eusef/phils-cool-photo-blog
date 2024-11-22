@@ -21,9 +21,10 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-      - name: ls dir
-        working-directory: ${{ env.WORKING_DIRECTORY }}
+      - name: List root directory contents
         run: ls -la
+      - name: List working directory contents
+        run: ls -la ${{ env.WORKING_DIRECTORY }}
       - name: Install dependencies
         working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn install --frozen-lockfile
