@@ -100,6 +100,29 @@ Because he couldn't handle the conflicts, and now his assets are all over the pl
 
 
 ## Dad Joke of the Day
+Why did the programmer break up with the git repository?
+
+Because every time they tried to connect, there were too many conflicts and they couldn't commit!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging his blog?
+
+Because he couldn't handle all the conflicts and his assets were always in the wrong branch!
+
+## Dad Joke of the Day
 Why did the git branch get a job at the magazine?
 
 Because it had a lot of "commit"-ment to merging stories!
+
+
+## Dad Joke of the Day
+"Why did the developer go broke after merging 'main' into 'blog-work'?"
+
+"Because they couldn't handle the merge conflict fees!"
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging his blog work?
+
+Because he couldn't handle so many conflicts, he lost "interest"! 😄

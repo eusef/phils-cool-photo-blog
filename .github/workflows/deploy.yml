@@ -11,7 +11,8 @@ jobs:
   build:
     name: Build Docusaurus
     runs-on: ubuntu-latest
-    WORKING_DIRECTORY: ./phils-cool-photo-blog
+    env:
+      WORKING_DIRECTORY: ./phils-cool-photo-blog/
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,6 +31,7 @@ jobs:
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
+        working-directory: ${{ env.WORKING_DIRECTORY }}
         with:
           path: build
 
