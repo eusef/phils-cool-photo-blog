@@ -91,3 +91,9 @@ Because they wanted to see if the build was high enough before deploy, duh!
 Why did the developer go broke after merging their blog branches?
 
 Because they couldn't handle all the commit-ments!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging his blog work?
+
+Because he couldn't handle the conflicts, and now his assets are all over the place!
