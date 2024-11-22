@@ -14,6 +14,8 @@ jobs:
     env:
       WORKING_DIRECTORY: ./phils-cool-photo-blog
     steps:
+      - name: List directory contents
+        run: ls -la ${{ env.WORKING_DIRECTORY }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -21,8 +23,6 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-      - name: List directory contents
-        run: ls -la ${{ env.WORKING_DIRECTORY }}
       - name: Install dependencies
         working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn install --frozen-lockfile
