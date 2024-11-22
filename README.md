@@ -160,3 +160,9 @@ Because it had too many branches to log!
 Why did the developer go broke after merging the pull request for their blog?
 
 Because they couldn't resist committing to too many branches!
+
+
+## Dad Joke of the Day
+Why did the programmer bring a ladder to work?
+
+Because they needed to upload the build and couldn't find the path!
