@@ -143,3 +143,9 @@ Because he couldn't handle all the conflicts on his own branch!
 Why was the computer tired after merging "main" into "blog-work"?
 
 Because it had too many branches to log!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging the pull request for their blog?
+
+Because they couldn't resist committing to too many branches!
