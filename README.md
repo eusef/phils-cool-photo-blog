@@ -109,3 +109,8 @@ Because every time they tried to connect, there were too many conflicts and they
 Why did the developer go broke after merging his blog?
 
 Because he couldn't handle all the conflicts and his assets were always in the wrong branch!
+
+## Dad Joke of the Day
+Why did the git branch get a job at the magazine?
+
+Because it had a lot of "commit"-ment to merging stories!
