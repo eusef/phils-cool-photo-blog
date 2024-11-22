@@ -114,3 +114,9 @@ Because he couldn't handle all the conflicts and his assets were always in the w
 Why did the git branch get a job at the magazine?
 
 Because it had a lot of "commit"-ment to merging stories!
+
+
+## Dad Joke of the Day
+"Why did the developer go broke after merging 'main' into 'blog-work'?"
+
+"Because they couldn't handle the merge conflict fees!"
