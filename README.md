@@ -67,3 +67,9 @@ Because he couldn’t handle the commit-ment!
 Why did the developer go broke after merging his blog-work?
 
 Because he couldn't handle the conflicts and it always ended in a check-out!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging branches?
+
+Because they couldn't handle the git 'conflict' interest rates!
