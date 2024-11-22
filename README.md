@@ -85,3 +85,9 @@ He heard they were trying to generate a lockfile on the fly!
 Why did the programmer take a ladder to work?
 
 Because they wanted to see if the build was high enough before deploy, duh!
+
+
+## Dad Joke of the Day
+Why did the developer go broke after merging their blog branches?
+
+Because they couldn't handle all the commit-ments!
