@@ -79,3 +79,9 @@ Because they couldn't handle the git 'conflict' interest rates!
 Why did the programmer bring a key to the meeting?
 
 He heard they were trying to generate a lockfile on the fly!
+
+
+## Dad Joke of the Day
+Why did the programmer take a ladder to work?
+
+Because they wanted to see if the build was high enough before deploy, duh!
