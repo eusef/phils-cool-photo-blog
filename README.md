@@ -175,3 +175,9 @@ Because they needed to upload the build and couldn't find the path!
 Why did the developer go broke after merging their code?
 
 Because they used all their cache hosting Phils's cool photo blog!
+
+
+## Dad Joke of the Day
+Why did the README.md file go to therapy?
+
+Because it just couldn't handle all the changes!
