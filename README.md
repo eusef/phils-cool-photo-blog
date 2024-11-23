@@ -11,6 +11,9 @@ This demo contains two parts.
 
 2. Part 2 is a Docusaurus blog, that a developer would use to create a nice little photography blog within github pages. More on this later :D.
 
+Live View of the Deployed Project
+- https://eusef.github.io/phils-cool-photo-blog/
+
 For more information about the 1Password GitHub Action
 
 - https://developer.1password.com/docs/ci-cd/github-actions/
