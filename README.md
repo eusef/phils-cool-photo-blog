@@ -181,3 +181,9 @@ Because they used all their cache hosting Phils's cool photo blog!
 Why did the README.md file go to therapy?
 
 Because it just couldn't handle all the changes!
+
+
+## Dad Joke of the Day
+Why did the developer add a suitcase to their script?
+
+Because they wanted to make it portable to other GitHub repos! 😄
