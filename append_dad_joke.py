@@ -49,6 +49,8 @@ async def main():
     # Commit and push changes
     def commit_and_push_changes():
         github_token = os.environ.get('GITHUB_TOKEN')
+        repo_url = os.environ.get('REPO_URL')
+        repo_user = os.environ.get('REPO_USER')
         if not github_token:
             print("Error: GITHUB_TOKEN environment variable is not set.")
             sys.exit(1)
@@ -57,7 +59,7 @@ async def main():
             subprocess.run(["git", "config", "--local", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
             subprocess.run(["git", "add", readme_path], check=True)
             subprocess.run(["git", "commit", "-m", "chore: add dad joke to README"], check=True)
-            subprocess.run(["git", "push", f"https://x-access-token:{github_token}@github.com/eusef/phils-cool-photo-blog.git"], check=True)
+            subprocess.run(["git", "push", f"https://x-access-token:{github_token}@github.com/{repo_user}/{repo_url}.git"], check=True)
             print("Changes committed and pushed successfully.")
         except subprocess.CalledProcessError as e:
             print(f"Error committing or pushing changes: {e}")

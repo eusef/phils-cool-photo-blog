@@ -35,3 +35,5 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ steps.op-ai-creds.outputs.OPEN_AI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_URL: ${{ github.event.repository.name }}
+          REPO_USER: ${{ github.event.repository.owner.login }}
