@@ -20,3 +20,9 @@ For more information about the 1Password GitHub Action
 
 // Below this spot are all the Dad Jokes based on a summary of the last commit!
 
+
+
+## Dad Joke of the Day
+Why did the programmer update README.md on the weekend?
+
+Because he wanted everyone to be more certain about what they're committing to!
