@@ -52,3 +52,9 @@ For more information about the 1Password GitHub Action
 Why did the programmer update README.md on the weekend?
 
 Because he wanted everyone to be more certain about what they're committing to!
+
+
+## Dad Joke of the Day
+Why did the README.md go to therapy?
+
+Because it just couldn't handle all the updates!
